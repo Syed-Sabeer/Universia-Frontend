@@ -1,0 +1,385 @@
+/* Register Page Styles */
+.register-container {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-wrapper {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.register-left {
+  flex: 1;
+  padding: 60px 40px;
+  min-width: 300px;
+  color: white;
+}
+
+.brand-name {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #fff, #d4e1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+}
+
+.brand-tagline {
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.register-right {
+  flex: 1;
+  min-width: 320px;
+  background-color: white;
+  border-radius: 16px 0 0 16px;
+  margin-left: auto;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.register-form-container {
+  width: 100%;
+}
+
+.welcome-text {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label, .section-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: #f7f9fc;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
+.register-btn {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.date-selects {
+  display: flex;
+  gap: 12px;
+}
+
+.select-container {
+  flex: 1;
+  position: relative;
+}
+
+.select-container:after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+.date-selects select {
+  width: 100%;
+  padding: 12px 16px;
+  appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f9fc;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.academic-status {
+  margin-top: 5px;
+}
+
+.radio-container {
+  flex: 1;
+  min-width: calc(33.333% - 7px);
+  position: relative;
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.radio-container:hover {
+  border-color: #6a11cb;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-label {
+  color: #333;
+  font-size: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.radio-label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.radio-container input:checked + .radio-label:before {
+  border-color: #6a11cb;
+  background-color: #fff;
+}
+
+.radio-container input:checked + .radio-label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6a11cb;
+}
+
+.terms-container {
+  margin: 20px 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  border-color: #6a11cb;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #6a11cb;
+  border-color: #6a11cb;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.terms-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.terms-text a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.terms-text a:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.login-section p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.login-account-btn {
+  background: transparent;
+  color: #6a11cb;
+  border: 2px solid #6a11cb;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-account-btn:hover {
+  background-color: #6a11cb;
+  color: white;
+}
+
+.login-page {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.login-page a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #6a11cb;
+  transition: color 0.3s ease;
+}
+
+.login-page a:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .register-wrapper {
+    flex-direction: column;
+  }
+  
+  .register-left {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .register-right {
+    width: 100%;
+    border-radius: 16px;
+    padding: 40px 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .radio-container {
+    min-width: calc(50% - 5px);
+  }
+} 

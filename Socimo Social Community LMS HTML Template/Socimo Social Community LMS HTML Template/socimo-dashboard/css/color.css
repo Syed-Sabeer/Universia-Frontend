@@ -1,0 +1,74 @@
+/*=========================
+	FONT COLOR
+=========================*/
+.product-carousel .owl-nav .owl-prev::before, 
+.product-carousel .owl-nav .owl-next::before,
+.product-caro .owl-prev:hover:before, 
+.product-caro .owl-next:hover:before,
+.topbar ul.web-elements > li > a,
+.dropdown > li > a,
+.send-mesg, 
+.attach-options > a i,
+.attach-options > a:hover,
+.user-total .totalinv2 > span,
+.corss > span,
+.top-5 > li > a:hover,
+table.table-default td > a,
+.d-Notices > ul li h6 a,
+.edit-btn:hover,
+.responsive-tab.style1 > ul li.uk-active a,
+.sl-content .inline-block > span.txt-success,
+.recent-media > figure a,
+.form__input:focus + .form__label,
+.form__link,
+.team-info > h3 a,
+.error-sec h2,
+.more-opt > ul > li > a:hover,
+.price > span,
+.add-btn > a:hover
+{
+	color: #088dcd;	
+}
+
+
+
+/*=========================
+	BACKGROUND COLOR
+=========================*/
+#topcontrol,
+.nav.nav-tabs.slide-btns li a.active,
+.drop-menu > li > a:hover,
+.tab-content .tab-pane > a.main-btn,
+.chat-live,
+.chat-head,
+.more-attachments,
+.message-text-container form button,
+.cart-product > span, .chat-live > span,
+.chat-card-head,
+.text-box > button,
+.realtime-ico,
+table.all-events tbody td .image-bunch > span,
+.edit-btn,
+.form__button,
+.add-btn > a
+{
+	background: #088dcd;
+}
+
+.stroke-solid,
+.apexcharts-canvas svg{
+	fill: #088dcd;
+}
+
+
+
+/*=========================
+	BORDER COLOR
+=========================*/
+.add-btn > a:hover
+{
+	border-color: #088dcd;	
+}
+.form__input:focus{
+	border-bottom-color: #088dcd;
+}

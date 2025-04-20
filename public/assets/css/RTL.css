@@ -1,0 +1,868 @@
+/*
+[Master Stylesheet]
+
+Project Name: Socimo RTL
+Version:    1.2 RTL
+updated: 	12-Jan-2021
+
+*/
+body{
+	direction: rtl;
+}
+ul, ol {
+    padding-right: 0;
+    list-style: none;
+}
+section{
+	float: unset;
+}
+.page-loader{
+	direction: ltr;
+}
+.topbar > ul.web-elements {
+    float: left;
+}
+.user-dp {
+    direction: ltr;
+}
+.dropdown {
+    left: 0;
+    right: auto;
+}
+
+.logo {
+    float: right;
+    margin-top: 8px;
+}
+.searches {
+    float: right;
+    margin-left: 0;
+    margin-right: 30px;
+}
+.cancel-search {
+    left: 10px;
+    right: auto;
+}
+.searched-user {
+    text-align: right;
+}
+.trash {
+    left: 8px;
+    right: auto;
+}
+.menu-caro {
+    direction: ltr;
+}
+.university-tag .sharing-options {
+    left: 6px;
+    right: auto;
+}
+a.invite {
+    left: 10px;
+    right: auto;
+}
+.uni-name {
+    padding-left: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+.university-tag {
+    text-align: right;
+}
+.main-wraper, aside .widget {
+    text-align: right;
+}
+.main-title::before {
+    left: auto;
+    right: -20px;
+    unicode-bidi: bidi-override;
+}
+.main-title > a {
+    float: left;
+}
+.friend-meta > a {
+    float: left;
+}
+.widget-analytics > li > span {
+    float: left;
+}
+.user-tabs .nav-tabs {
+    float: right;
+}
+.friend {
+    text-align: right;
+}
+.friend > a > i {
+    float: left;
+}
+.friend > a > span {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.chat-list {
+    direction: ltr;
+}
+.frnd-opt > span:hover::before {
+    transform: translate(-82%, -50%) scale(1);
+}
+.chat-card-head .frnd-opt {
+    float: left;
+}
+.chat-card-head {
+    text-align: right;
+}
+.frnd-opt > span {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.more-post-optns:hover > ul {
+    left: -1px;
+    right: auto;
+}
+.more-post-optns > ul > li i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+.ask-question > h6 {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.widget .sponsors-ad > li .sponsor-meta {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.your-grp {
+    padding-left: 0;
+    padding-right: 8px;
+}
+.owl-carousel {
+    direction: ltr;
+}
+.widget .prof-complete > li em {
+    float: left;
+}
+.sidebar .widget li i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.sidebar .widget li i {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.position-meta > span {
+    float: left;
+}
+.position-meta {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.see-all {
+    float: left;
+}
+.book-about {
+    padding-left: 0;
+    padding-right: 8px;
+}
+.sidebar .invitepage > li figure img {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.sidebar .invitepage > li button i {
+    float: none;
+    margin-left: 0;
+}
+.re-links-meta {
+    padding-left: 0;
+    padding-right: 7px;
+}
+.suggestd > li button.sug-like {
+    float: left;
+}
+.book-about > a {
+    float: left;
+}
+.widget-title {
+    unicode-bidi: bidi-override;
+}
+.widget > span > i {
+    float: right;
+    margin-left: 5px;
+}
+.post-subject {
+    text-align: right;
+}
+.widget.web-links ul li > i{
+	transform: rotate(180deg);
+}
+.error-page {
+    direction: ltr;
+}
+.added-complete {
+    float: left;
+}
+.offset-lg-1 {
+    margin-left: auto;
+    margin-right: 8.33333%;
+}
+.nav.nav-tabs.about-btn {
+    float: right;
+    width: auto;
+}
+.author-info > h4 {
+    unicode-bidi: bidi-override;
+}
+.side-slide {
+    left: -100%;
+    right: auto;
+}
+.side-slide.active {
+    left: 0;
+    right: auto;
+}
+.popup-closed {
+    left: 18px;
+    right: auto;
+}
+.mesg-info {
+    padding-left: 0;
+    padding-right: 8px;
+    text-align: right;
+}
+.blog-post-meta {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.blog-post-meta > ul > li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.blog-post-meta > ul > li > i {
+    margin-left: 5px;
+}
+.blog-post-meta > a.button {
+    float: left;
+}
+.menu-slide > li > a > i {
+    margin-left: 14px;
+    margin-right: 0;
+}
+.menu-slide > li {
+    text-align: right;
+}
+.menu-slide .menu-item-has-children > a::before {
+    left: 13px;
+    right: auto;
+}
+.menu-item-has-children ul.submenu > li a::before {
+    left: auto;
+    right: 0;
+}
+.logo > span{
+	padding-left: 0;
+	padding-right: 5px;
+	unicode-bidi: bidi-override;
+}
+.blog-detail {
+    text-align: right;
+}
+.blog-details-meta > ul li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.blog-details-meta > ul li i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.tag-n-cat .tags > span {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.next-prev-posts .prev {
+    float: right;
+}
+.next-prev-posts .next {
+    float: left;
+}
+.next-prev-posts .prev > a i {
+    transform: rotate(180deg);
+}
+.next > a > i {
+    float: left;
+    transform: rotate(177deg) !important;
+}
+.next:hover > a i {
+    transform: translate(0px);
+}
+.commenter-meta {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.comment-titles > ins {
+    float: left;
+}
+.add-comment > span {
+    float: right;
+}
+.add-comment .stars {
+    float: right;
+    margin-left: 0;
+    margin-right: 15px;
+}
+.coming-page {
+    direction: ltr;
+}
+.logo.top-left {
+    float: left;
+}
+
+.topbar > ul {
+    float: left;
+}
+.info-sec > div {
+    padding-left: 0;
+    padding-right: 12px;
+    text-align: right;
+}
+.verticle-center {
+    direction: ltr;
+}
+.measure.right {
+    padding-left: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+.measure > h2 {
+    max-width: 100%;
+}
+.postby > li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.postby {
+    text-align: right;
+}
+a.date {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.blog-grid .blog-title {
+    text-align: right;
+    width: 81%;
+}
+.newsletter-sec > form {
+    direction: ltr;
+    float: left;
+    width: 40%;
+}
+.newsletter-sec > .leter-meta {
+    float: right;
+    margin-top: 30px;
+    padding-left: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+.newsletter-sec > figure {
+    float: right;
+}
+.newsletter-sec form input {
+    width: 100%;
+}
+.newsletter {
+    direction: ltr;
+}
+.news-lettr {
+    text-align: right;
+}
+.news-lettr > a {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.quick-links {
+    text-align: right;
+}
+.quick-links > li::before {
+    left: auto;
+    right: 0;
+}
+.quick-links > li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.widget-title {
+    text-align: right;
+	font-weight: bold;
+}
+.new-title,
+.chatroom-title > span{
+	font-weight: bold;
+}
+.widget-title > h4::before, .widget-title > h4::after {
+    left: auto;
+    right: 0;
+}
+.web-info {
+    text-align: right;
+}
+.course-details > a {
+    float: left;
+}
+.course-price {
+    float: left;
+}
+.statistic > li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.incldes > ul > li > i {
+    float: right;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 4px;
+}
+.prise {
+    float: left;
+}
+.event-loc > span i {
+    float: right;
+    margin-left: 10px;
+}
+.event-meta .more {
+    left: 15px;
+    right: auto;
+}
+.more-post-optns > ul {
+    left: 0;
+    right: auto;
+    text-align: right;
+}
+.more {
+    float: left;
+}
+.friend-name {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.friend-name > ins a {
+    float: right;
+    margin-left: 7px;
+	font-weight: bold;
+}
+.friend-name > span {
+    float: right;
+}
+.friend-name > span i {
+    float: right;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.popup-meta {
+    text-align: right;
+}
+.button.outline-primary {
+    padding: 7px 20px;
+    font-size: 13px;
+}
+.post-new {
+    direction: ltr;
+}
+.post-new .c-form {
+    text-align: left;
+}
+.post-categoroes > li i {
+    float: right;
+    margin-left: 8px;
+    margin-right: 0;
+    margin-top: 4px;
+}
+
+.filtr-tabs {
+    text-align: right;
+}
+.story-title > a {
+    float: left;
+}
+.story-title {
+    text-align: right;
+}
+.create-newroom {
+    float: left;
+}
+.chatroom-title > span {
+    unicode-bidi: bidi-override;
+}
+.reply {
+    float: left;
+}
+.we-video-info > ul {
+    float: right;
+    padding-left: 0;
+}
+.emoji-state {
+    direction: ltr;
+}
+.new-comment form button {
+    left: 5px;
+    right: auto;
+}
+.post-meta .premium {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.vid-info {
+    float: left;
+}
+.sponsor-prod-name {
+    text-align: right;
+}
+.sponsor-prod-name > span {
+    float: left;
+}
+.share-info {
+    float: left;
+}
+.share-info > span {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.pass-form {
+    direction: ltr;
+    text-align: right;
+}
+.pass-form > span a {
+    float: left;
+}
+.grp-info > h4 {
+    text-align: right;
+}
+.more-grp-info li .more {
+    float: right;
+}
+.grp-info ul.more-grp-info {
+    float: left;
+}
+.grp-info > ul {
+    float: right;
+}
+.grp-info > ul > li {
+    margin-left: 20px;
+    margin-right: 0;
+    unicode-bidi: bidi-override;
+}
+.more-grp-info form i {
+    left: 0;
+    right: auto;
+}
+.grp-info ul.more-grp-info > li {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.rec-grp-caro .owl-nav {
+    left: 40px;
+    right: auto;
+}
+.search-section form button {
+    left: 20px;
+    right: auto;
+    top: 13px;
+}
+.search-section form input {
+    padding: 15px 20px 15px 50px;
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.main-wraper > p {
+    unicode-bidi: bidi-override;
+}
+.search-section > a {
+    left: auto;
+    right: 0;
+    unicode-bidi: bidi-override;
+}
+.invoice-tofrom {
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.print-share {
+    float: left;
+}
+.invoice-meta {
+    text-align: right;
+}
+.create-date > ul {
+    float: right;
+}
+
+.wizard-wrapper {
+    direction: ltr;
+}
+.side-links > li {
+    text-align: right;
+}
+.side-links > li > a {
+    unicode-bidi: bidi-override;
+}
+.side-links > li > a > i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.chat-content {
+    direction: ltr;
+}
+.livechat-head > h5 {
+    float: right;
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+ul.chatting-area {
+    direction: ltr;
+    text-align: left;
+}
+.short-intro > ul {
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.short-intro > ul > li > p {
+    float: left;
+}
+.short-intro > ul > li > span {
+    unicode-bidi: bidi-override;
+}
+.s-right {
+    float: left;
+    text-align: left;
+}
+.s-left {
+    float: right;
+    text-align: right;
+}
+.s-right > span {
+    margin-right: 10px;
+}
+
+ul.chatting-area {
+    direction: ltr;
+    text-align: left;
+}
+.short-intro > ul {
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.short-intro > ul > li > p {
+    float: left;
+}
+.short-intro > ul > li > span {
+    unicode-bidi: bidi-override;
+}
+.s-right {
+    float: left;
+    text-align: left;
+}
+.s-left {
+    float: right;
+    text-align: right;
+}
+.s-right > span {
+    margin-right: 10px;
+}
+.message-text-container > form {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.message-text-container form button {
+    left: 23px;
+    right: auto;
+}
+.emojie {
+    left: auto;
+    right: 13px;
+}
+.smiles-bunch {
+    left: auto;
+    right: 0;
+}
+.smiles-bunch::before {
+    left: auto;
+    right: 13px;
+}
+
+ul.chatting-area {
+    direction: ltr;
+    text-align: left;
+}
+.short-intro > ul {
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.short-intro > ul > li > p {
+    float: left;
+}
+.short-intro > ul > li > span {
+    unicode-bidi: bidi-override;
+}
+.s-right {
+    float: left;
+    text-align: left;
+}
+.s-left {
+    float: right;
+    text-align: right;
+}
+.s-right > span {
+    margin-right: 10px;
+}
+.message-text-container > form {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: bidi-override;
+}
+.message-text-container form button {
+    left: 23px;
+    right: auto;
+}
+.emojie {
+    left: auto;
+    right: 13px;
+}
+.smiles-bunch {
+    left: auto;
+    right: 0;
+}
+.smiles-bunch::before {
+    left: auto;
+    right: 13px;
+}
+.corss {
+    float: left;
+}
+.status::before {
+    left: auto;
+    right: 25px;
+}
+.corss > span {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.chat-header > h6 {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.post-subject .download-btn {
+    left: 0;
+    right: auto;
+}
+.sharing-options > li {
+    margin-left: 15px;
+    margin-right: 0;
+}
+.post-detail-btn li.nav-item {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.tags {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.tags-title {
+    float: right;
+}
+.cart-table tbody td > .edit-cart {
+    float: left;
+}
+.cart-table tbody td > .item-meta {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.cart-box {
+    text-align: right;
+}
+.courier-box > input {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.we-video-info {
+    text-align: right;
+}
+.user > a {
+    float: left;
+}
+.user-information {
+    padding-left: 0;
+    padding-right: 10px;
+    text-align: right;
+}
+.search-question > form button {
+    left: 6px;
+    right: auto;
+}
+.question-meta .tags {
+    padding-right: 0;
+}
+.related-qst > li a {
+    padding-left: 0;
+    padding-right: 25px;
+    unicode-bidi: bidi-override;
+}
+.related-qst > li > a::before {
+    left: auto;
+    right: 0;
+}
+.related-searches > li{
+    unicode-bidi: bidi-override;
+}
+.payment-methods .uk-tab > li {
+    margin-left: 50px;
+    margin-right: 0;
+}
+.video-search > i {
+    left: 10px;
+    right: auto;
+}
+.video-search > input {
+    padding-left: 27px;
+    padding-right: 15px;
+}
+#img-comt .modal-header {
+    left: 5px;
+    right: auto;
+}
+#img-comt .modal-header {
+    left: 5px;
+    right: auto;
+}
+.ps-container {
+    direction: ltr;
+    text-align: right;
+}
+.story-title > h5,
+.premium .post-title,
+.commenter > h5,
+.friend-meta h4 a,
+.filtr-tabs > li > a{
+	font-weight: bold;
+}
+.comments-area > ul {
+    direction: rtl;
+}
+.commenter {
+    text-align: right;
+}
+.comments-area > ul > li > a {
+    float: left;
+}
+.wraper-title > span {
+    float: right;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.wraper-title > span > i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.link-item > a p {
+    font-size: 15px;
+    font-weight: bold;
+}
+

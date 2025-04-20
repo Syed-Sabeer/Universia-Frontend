@@ -1,0 +1,308 @@
+/*--- big screen ----*/
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+	.forget-password {
+		margin: 156px 0;
+	}
+	.add-member{
+		height: 397.35px;
+		line-height: 395px;
+	}
+	ul.chatting-area{
+		max-height: 410px;
+	}
+	.message-text-container textarea{
+		width: 90%;
+	}
+    
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1281px)  {
+    
+	
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px)  {
+	
+	
+
+}
+
+/*--- tablet landscape ---*/
+
+@media screen and (max-width: 1024px) {
+		
+	
+}
+
+/*--- tablet view ---*/
+
+@media screen and (max-width: 990px) {
+	.user-avatar.timeline .name > h4 {
+		font-size: 14px;
+		line-height: 12px;
+	}
+	.user-avatar.timeline .name > span {
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.user-avatar.timeline .name {
+		margin-top: 4px;
+		padding-left: 3px;
+		width: 71%;
+	}
+	.w-chart-section {
+		margin-top: 25px;
+	}
+	.mb-3.blog-item {
+		margin-bottom: 0 !important;
+	}
+	.blog-item {
+		margin-bottom: 20px;
+	}
+	.mt-4.blog-item {
+		margin-top: 0 !important;
+	}
+	table.all-events tbody td {
+		font-size: 12px;
+		min-width: 115px;
+	}
+	.d-widget{margin-bottom: 20px;}
+	.row.merged20.mb-4 {
+		margin-bottom: 0 !important;
+	}
+	.row.merged20 > div {
+		padding: 0 10px;
+	}
+	.chat-content{margin-bottom: 30px;}
+	.add-member{
+		height: 338.917px;
+		line-height: 338.917px;
+	}
+
+
+
+
+
+
+	    
+}
+
+@media screen and (max-width: 812px) {
+	header{display: none;}
+	.responsive-header{display: block;}
+	p{
+		font-size: 13px;
+		line-height: 24px;
+	}
+	.top-sub-bar{
+		top: 55px;
+	}
+	.breadcrumb > li{font-size: 11px;}
+	.panel-content {
+		padding-left: 7px;
+		padding-top: 60px;
+		padding-right: 7px;
+	}
+	.row.merged20 > div {
+		padding: 0 7px;
+	}
+	nav.sidebar{padding-top: 120px; left: -100%;}
+	nav.sidebar.hide {
+		left: 0;
+	}
+	.add-member{
+		height: 385px;
+		line-height: 385px;
+	}
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.d-widget{margin-bottom: 20px;}
+	table.table-default tr td.productss{
+		min-width: 200px;
+	}
+	table.table-default tr td .actions-btn {
+		min-width: 70px;
+	}
+	.manage-user.table-default td > h5{
+		max-width: 90px;
+		font-size: 12px;
+	}
+	.add-member{
+		height: 345px;
+		line-height: 345px;
+	}
+	
+
+
+
+
+	
+}
+
+@media screen and (max-width: 667px) {
+	.user-avatar.mobile > .name{
+		width: 70%;
+	}
+	table.table-default td, table.table-default th{
+		font-size: 11px;
+	}
+	.error-sec h2{
+		font-size: 200px;
+	}
+	.mb-3.blog-item {
+		margin-bottom: 20px !important;
+	}
+	.message-text-container > form{
+		width: 90%;
+	}
+	.sl-content{width: 75%;}
+
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+	
+
+
+    
+}
+@media screen and (max-width: 568px) {
+	.user-avatar.mobile > .name {
+		width: 68%;
+	}
+	.rating-stars{width: 100px;}
+	.table-default tbody tr td {
+		width: 160px;
+	}
+	table.table-default thead th{font-size: 11px; min-width: 110px;}
+	.table.manage-user > tbody tr td:first-child{
+		min-width: 160px;
+	}
+	table.table-default tr td.productss{
+		min-width: 200px;
+	}
+	.responsive-tab.style1 > ul > li{
+		padding-left: 20px;
+	}
+	.uk-grid {
+		margin-left: -20px;
+	}
+	
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+	.user-avatar.mobile > .name{
+		display: none;
+	}
+	.res-logo{width: 45%;}
+	.user-avatar.mobile{width: 25%;}
+	.top-sub-bar .col-lg-6 {
+		width: 50%;
+	}
+	nav.sidebar {
+		left: -100%;
+	}
+	.error-sec > p {
+		margin-bottom: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	.event-deta{width: 79%;}
+	.invoice-item{padding: 0;}
+	.responsive-tab.style1 > ul > li{
+		margin-bottom: 10px;
+	}
+	.setting-card > h2{font-size: 20px;}
+	.edition-btn{
+		top: auto;
+		bottom: 0;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+	.error-sec > h2 {
+		font-size: 100px;
+	}
+	.error-sec > h2 i svg {
+		width: 60px;
+	}
+	.error-sec > p {
+		margin-bottom: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	.print-share {
+		width: 95px;
+	}
+	.print-share > a {
+		font-size: 11px;
+	}
+	.invoice-meta {
+		padding: 10px;
+	}
+	.message-text-container > form{
+		width: 73%;
+	}
+	.message-text-container form button{
+		right: -44px;
+	}
+
+	
+
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+	.message-text-container textarea{
+		width: 82%;
+	}
+
+	
+
+}
+
+
+@media screen and (max-width: 360px) {
+    
+
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .page-title {
+		margin-left: 0;
+	}
+	.message-text-container textarea{
+		padding-right: 0;
+	}
+	
+
+
+
+
+}

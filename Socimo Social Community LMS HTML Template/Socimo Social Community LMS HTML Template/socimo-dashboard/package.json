@@ -1,0 +1,13 @@
+{
+  "name": "Evanto",
+  "version": "1.0.0",
+  "description": "social website",
+  "main": "Gruntfile.js",
+  "author": "dewwater",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.1"
+  }
+}
