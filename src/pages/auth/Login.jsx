@@ -1,7 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import axios from 'axios'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const [loading, setLoading] = useState(false);
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true); // Start loading
+    setError(''); // Clear any previous error
+  
+    try {
+      const res = await axios.post('http://localhost:8000/api/login/', formData);
+      localStorage.setItem('token', res.data.token);
+      navigate('/');
+    } catch (err) {
+      console.error("Login error:", err.response?.data);
+      setError(err.response?.data?.error || 'Invalid credentials. Please try again.');
+    } finally {
+      setLoading(false); // Stop loading
+    }
+  };
+  
   return (
     <div className="login-container">
       <div className="login-wrapper">
@@ -14,16 +43,34 @@ const Login = () => {
         <div className="login-right">
           <div className="login-form-container">
             <h2 className="welcome-text">Welcome Back</h2>
-            <form className="login-form">
+            {error && <p className="error-message">{error}</p>}
+            <form className="login-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label>Email or Phone</label>
-                <input type="text" placeholder="Enter your email or phone" />
+                <label>Email or Username</label>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Enter your email or username"
+                  value={formData.username}
+                  onChange={handleChange}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label>Password</label>
-                <input type="password" placeholder="Enter your password" />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-              <button type="submit" className="login-btn">Sign In</button>
+              <button type="submit" className="login-btn" disabled={loading}>
+  {loading ? 'Signing In...' : 'Sign In'}
+</button>
+
               <div className="forgot-password">
                 <Link to="/forgot-password">Forgot your password?</Link>
               </div>

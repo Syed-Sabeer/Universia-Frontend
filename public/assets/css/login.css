@@ -1,6 +1,6 @@
 /* Login Page Styles */
 .login-container {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background: linear-gradient(120deg, #2b5876 0%, #4e4376 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -15,11 +15,11 @@
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .login-left {
@@ -27,32 +27,52 @@
   padding: 60px 40px;
   min-width: 300px;
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-left::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  z-index: 0;
 }
 
 .brand-name {
   font-size: 56px;
   font-weight: 800;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #fff, #d4e1ff);
+  background: linear-gradient(to right, #fff, #a6c1ee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -1px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .brand-tagline {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .login-right {
   flex: 1;
   min-width: 320px;
   background-color: white;
-  border-radius: 16px 0 0 16px;
+  border-radius: 20px 0 0 20px;
   margin-left: auto;
   padding: 60px 40px;
   position: relative;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .login-form-container {
@@ -64,6 +84,17 @@
   font-weight: 700;
   margin-bottom: 30px;
   color: #333;
+  position: relative;
+}
+
+.welcome-text::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #2b5876, #4e4376);
 }
 
 .login-form {
@@ -73,64 +104,90 @@
 
 .form-group {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
-  color: #555;
+  color: #444;
+  font-size: 15px;
 }
 
 .login-form input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 15px 16px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid #e0e0e0;
-  background-color: #f7f9fc;
+  background-color: #f8fafc;
   transition: all 0.3s ease;
 }
 
 .login-form input:focus {
   outline: none;
-  border-color: #6a11cb;
-  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+  border-color: #4e4376;
+  box-shadow: 0 0 0 4px rgba(78, 67, 118, 0.1);
+  background-color: #fff;
 }
 
 .login-btn {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #2b5876, #4e4376);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 18px;
   font-weight: 600;
-  padding: 14px;
+  padding: 15px;
   margin-top: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+  box-shadow: 0 4px 12px rgba(43, 88, 118, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: all 0.6s ease;
 }
 
 .login-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+  box-shadow: 0 6px 18px rgba(43, 88, 118, 0.4);
+}
+
+.login-btn:hover::before {
+  left: 100%;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .forgot-password {
   text-align: center;
-  margin: 20px 0;
+  margin: 22px 0;
 }
 
 .forgot-password a {
-  color: #6a11cb;
+  color: #4e4376;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  padding: 5px;
 }
 
 .forgot-password a:hover {
-  color: #2575fc;
+  color: #2b5876;
   text-decoration: underline;
 }
 
@@ -138,9 +195,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 35px;
   padding-top: 30px;
   border-top: 1px solid #eee;
+  position: relative;
+}
+
+.signup-section::before {
+  content: 'or';
+  position: absolute;
+  top: -12px;
+  padding: 0 10px;
+  background-color: white;
+  color: #999;
+  font-size: 14px;
 }
 
 .signup-section p {
@@ -150,37 +218,66 @@
 
 .create-account-btn {
   background: transparent;
-  color: #6a11cb;
-  border: 2px solid #6a11cb;
-  border-radius: 8px;
+  color: #4e4376;
+  border: 2px solid #4e4376;
+  border-radius: 12px;
   font-size: 17px;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 10px 24px;
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.create-account-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .create-account-btn:hover {
-  background-color: #6a11cb;
   color: white;
+}
+
+.create-account-btn:hover::after {
+  height: 100%;
 }
 
 .create-page {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
+  color: #666;
 }
 
 .create-page a {
   font-weight: 600;
   text-decoration: none;
-  color: #6a11cb;
+  color: #4e4376;
   transition: color 0.3s ease;
 }
 
 .create-page a:hover {
-  color: #2575fc;
+  color: #2b5876;
   text-decoration: underline;
+}
+
+.error-message {
+  background-color: rgba(255, 87, 87, 0.1);
+  border-left: 4px solid #ff5757;
+  color: #d63031;
+  padding: 12px 15px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 @media (max-width: 900px) {
@@ -198,5 +295,10 @@
     width: 100%;
     border-radius: 16px;
     padding: 40px 20px;
+  }
+  
+  .welcome-text::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 } 
